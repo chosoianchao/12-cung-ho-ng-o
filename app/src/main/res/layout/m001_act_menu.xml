@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_700"
+    android:orientation="vertical"
+    android:weightSum="2"
+    tools:context=".M001MenuAct">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/purple_700"
+        android:elevation="1dp">
+
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="@dimen/d_50"
+            android:rotation="270"
+            android:src="@drawable/ic_circle_blank"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="0dp" />
+
+        <ImageView
+            android:id="@+id/iv_center"
+            android:layout_width="@dimen/d_50"
+            android:layout_height="@dimen/d_50"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_thien_binh"
+            android:layout_width="@dimen/d_60"
+            android:onClick="ThienBinh"
+            android:layout_height="@dimen/d_60"
+            android:src="@drawable/ic_thien_binh"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/iv_center"
+            app:layout_constraintCircleAngle="30"
+            app:layout_constraintCircleRadius="@dimen/d_120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_song_ngu"
+            android:onClick="SongNgu"
+            android:layout_width="@dimen/d_60"
+            android:layout_height="@dimen/d_60"
+            android:src="@drawable/ic_song_ngu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/iv_center"
+            app:layout_constraintCircleAngle="60"
+            app:layout_constraintCircleRadius="@dimen/d_120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/iv_ma_ket"
+            android:onClick="MaKet"
+            android:layout_width="@dimen/d_60"
+            android:layout_height="@dimen/d_60"
+            android:src="@drawable/ic_ma_ket"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/iv_center"
+            app:layout_constraintCircleAngle="90"
+            app:layout_constraintCircleRadius="@dimen/d_120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:onClick="BaoBinh"
+            android:id="@+id/iv_bao_binh"
+            android:layout_width="@dimen/d_60"
+            android:layout_height="@dimen/d_60"
+            android:src="@drawable/ic_bao_binh"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/iv_center"
+            app:layout_constraintCircleAngle="120"
+            app:layout_constraintCircleRadius="@dimen/d_120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:onClick="CuGiai"
+            android:id="@+id/iv_cu_giai"
+            android:layout_width="@dimen/d_60"
+            android:layout_height="@dimen/d_60"
+            android:src="@drawable/ic_cu_giai"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/iv_center"
+            app:layout_constraintCircleAngle="150"
+            app:layout_constraintCircleRadius="@dimen/d_120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:onClick="XuNu"
+            android:id="@+id/iv_xu_nu"
+            android:layout_width="@dimen/d_60"
+            android:layout_height="@dimen/d_60"
+            android:src="@drawable/ic_xu_nu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/iv_center"
+            app:layout_constraintCircleAngle="180"
+            app:layout_constraintCircleRadius="@dimen/d_120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:onClick="NhanMa"
+            android:id="@+id/iv_nhan_ma"
+            android:layout_width="@dimen/d_60"
+            android:layout_height="@dimen/d_60"
+            android:src="@drawable/ic_nhan_ma"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/iv_center"
+            app:layout_constraintCircleAngle="210"
+            app:layout_constraintCircleRadius="@dimen/d_120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:onClick="SuTu"
+            android:id="@+id/iv_su_tu"
+            android:layout_width="@dimen/d_60"
+            android:layout_height="@dimen/d_60"
+            android:src="@drawable/ic_su_tu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/iv_center"
+            app:layout_constraintCircleAngle="240"
+            app:layout_constraintCircleRadius="@dimen/d_120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.205"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.728" />
+
+        <ImageView
+            android:onClick="KimNguu"
+            android:id="@+id/iv_kim_nguu"
+            android:layout_width="@dimen/d_60"
+            android:layout_height="@dimen/d_60"
+            android:src="@drawable/ic_kim_nguu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/iv_center"
+            app:layout_constraintCircleAngle="270"
+            app:layout_constraintCircleRadius="@dimen/d_120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:onClick="SongTu"
+            android:id="@+id/iv_song_tu"
+            android:layout_width="@dimen/d_60"
+            android:layout_height="@dimen/d_60"
+            android:src="@drawable/ic_song_tu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/iv_center"
+            app:layout_constraintCircleAngle="300"
+            app:layout_constraintCircleRadius="@dimen/d_120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:onClick="BachDuong"
+            android:id="@+id/iv_bach_duong"
+            android:layout_width="@dimen/d_60"
+            android:layout_height="@dimen/d_60"
+            android:src="@drawable/ic_bach_duong"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/iv_center"
+            app:layout_constraintCircleAngle="330"
+            app:layout_constraintCircleRadius="@dimen/d_120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:onClick="BoCap"
+            android:id="@+id/iv_bo_cap"
+            android:layout_width="@dimen/d_60"
+            android:layout_height="@dimen/d_60"
+            android:src="@drawable/ic_bocap"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintCircle="@id/iv_center"
+            app:layout_constraintCircleAngle="360"
+            app:layout_constraintCircleRadius="@dimen/d_120"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:paddingHorizontal="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_bg_title"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/iv_info"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_bao_binh" />
+
+        <TextView
+            android:id="@+id/tv_info"
+            android:layout_marginStart="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/bao_binh_title2"
+            android:textColor="@color/yellow"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_details"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:fontFamily="sans-serif-light"
+            android:lineSpacingExtra="4dp"
+            android:text="@string/bao_binh_text"
+            android:textColor="@color/white"
+            android:textSize="@dimen/d_16" />
+
+        <Button
+            android:id="@+id/bt_details"
+            android:layout_marginStart="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:onClick="More"
+            android:backgroundTint="@color/yellow"
+            android:background="@drawable/ic_shape"
+            android:text="Xem thêm"
+            android:textColor="@color/black" />
+    </LinearLayout>
+
+
+
+</LinearLayout>
